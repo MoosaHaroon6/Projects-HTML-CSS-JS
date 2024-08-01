@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess !t : &#41;</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1 class="game-heading">Guess The Number</h1>
+    <div class="Grand-parent">
+        <form class="parent">
+            <label id="enter-guess">Enter Your Guess :
+                <input type="text" id="num-input" name="num-input" placeholder="What Do You Guess?">
+            </label>
+            <button id="submit-btn">Check</button>
+        </form>
+        <div class="results">
+            <p class="p-1">Previous Guesses :<span class="guesses"></span></p>
+            <p class="p-2">Guesses Remaining :<span class="last-result">10</span></p>
+            <p class="low-high"></p>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>

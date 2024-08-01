@@ -1,0 +1,163 @@
+body {
+    background-color: #fff;
+    cursor: none;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    font-size: 40px;
+    color: #7e9713;
+}
+
+.grand-parent {
+    width: 600px;
+    margin: auto;
+    height: 600px;
+    margin-top: 50px;
+    box-shadow: 0px 0px 5px #bebcbc;
+}
+
+.parent {
+    margin: auto;
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    color: black;
+}
+
+.parent input {
+    width: 400px;
+    height: 30px;
+    border-radius: 7px;
+    font-size: 1.2em;
+    border-color: transparent;
+    box-shadow: 0px 0px 15px #bebcbc;
+    margin-left: 10px;
+}
+
+.parent label {
+    margin-left: 10px;
+    font-size: 1.2em;
+}
+
+.parent button {
+    width: 300px;
+    padding: 10px;
+    margin-left: 150px;
+    color: #fff;
+    background-color: #7e9713;
+    font-size: 1.2em;
+    font-weight: bold;
+    border-radius: 5px;
+    border-color: transparent;
+}
+
+.parent button:hover {
+    color: #7e9713;
+    background-color: #fff;
+    cursor: pointer;
+    border: 1px solid #7e9713;
+}
+
+.small,
+.big {
+    position: absolute;
+    border-radius: 50%;
+    pointer-events: none;
+    transition: transform 0.1s, background-color 0.2s;
+}
+
+.small {
+    width: 20px;
+    height: 20px;
+    background: rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
+
+.big {
+    width: 40px;
+    height: 40px;
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    z-index: 999;
+}
+
+#error-para {
+    color: #fff;
+    background-color: rgb(255, 152, 152);
+    width: 200px;
+    text-align: center;
+    margin: auto;
+    margin-top: 20px;
+    display: inline;
+}
+
+#result {
+    font-weight: bold;
+    display: inline;
+    border-radius: 2px;
+    padding: 10px;
+    margin: auto;
+}
+
+#obesity {
+    margin: auto;
+}
+
+#UW {
+    color: #8a2be2;
+    background-color: #b2b2b2;
+    display: inline;
+    border-radius: 2px;
+    padding: 10px;
+    font-weight: bold;
+}
+
+#normal {
+    color: #7e9713;
+    font-weight: bold;
+    background-color: #b2b2b2;
+    display: inline;
+    border-radius: 2px;
+    padding: 10px;
+}
+
+#OW {
+    font-weight: bold;
+    color: #ff0000;
+    background-color: #b2b2b2;
+    display: inline;
+    border-radius: 2px;
+    padding: 10px;
+}
+
+
+@media (max-width: 600px) {
+    body {
+        background-color: #f0f0f0;
+    }
+
+    .grand-parent,
+    .parent {
+        width: 100%;
+        height: auto;
+        margin-top: 20px;
+        box-shadow: none;
+    }
+
+    .parent input,
+    .parent button {
+        width: calc(100% - 20px);
+        margin-left: 10px;
+    }
+
+    .parent button {
+        margin-left: 10px;
+        margin-top: 10px;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+}

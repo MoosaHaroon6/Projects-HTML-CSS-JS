@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fafafa;
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+  /* background-image: url('https://img.freepik.com/free-photo/bright-light-dark-background_23-2148132332.jpg?ga=GA1.1.382181503.1721729966&semt=ais_user'); */
+  background-repeat: no-repeat;
+  background-image: url('https://img.freepik.com/premium-photo/purple-lines-dark-background_994023-32473.jpg?ga=GA1.1.382181503.1721729966&semt=ais_user');
+  background-size: cover;
+}
+
+.magic {
+  width: 10em;
+  position: relative;
+  height: 3.5em;
+  border: 3px ridge #7636b4;
+  outline: none;
+  background-color: transparent;
+  color: #7636b4;
+  transition: 1s;
+  border-radius: 0.3em;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.magic::after {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: 3%;
+  width: 95%;
+  height: 40%;
+  transition: 0.5s;
+  transform-origin: center;
+}
+
+.magic:before {
+  content: "";
+  transform-origin: center;
+  position: absolute;
+  top: 80%;
+  left: 3%;
+  width: 95%;
+  height: 40%;
+  transition: 0.5s;
+}
+
+.magic:hover::before, button:hover::after {
+  transform: scale(0)
+}
+
+.magic:hover {
+  box-shadow: inset 0px 0px 25px #7636b4;
+}
+
+
+.boxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  height: 500px;
+  width: 500px;
+  position: relative;
+  transition: 0.4s ease;
+  margin-top: 30px;
+}
+
+.boxes.big {
+  width: 600px;
+  height: 600px;
+}
+
+.boxes.big .box {
+  transform: rotateZ(360deg);
+}
+
+.box {
+  background-image: url('car.gif.gif');
+  background-repeat: no-repeat;
+  background-size: 500px 500px;
+  position: relative;
+  height: 125px;
+  width: 125px;
+  transition: 0.4s ease;
+}
+
+.box::after {
+  content: '';
+  background-color: #240c3b;
+  position: absolute;
+  top: 8px;
+  right: -15px;
+  height: 100%;
+  width: 15px;
+  transform: skewY(45deg);
+}
+
+.box::before {
+  content: '';
+  background-color: #36105b;
+  position: absolute;
+  bottom: -15px;
+  left: 8px;
+  height: 15px;
+  width: 100%;
+  transform: skewX(45deg);
+}
